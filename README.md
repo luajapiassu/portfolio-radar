@@ -50,7 +50,8 @@ Os notebooks também rodam no Google Colab.
 
 ## Integrantes
 
-- _a definir_
+- Luã Japiassu Macedo Maia
+- Beatriz Babinski
 
 ## Ética e dados
 
