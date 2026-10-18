@@ -1,17 +1,21 @@
 # Portfolio Radar
 
-Radar de fatos relevantes e manchetes financeiras para uma carteira de ações, com Processamento de Linguagem Natural.
+Radar de notícias financeiras para uma carteira de ações, com Processamento de Linguagem Natural.
+
+Projeto final da disciplina **IBM3130 — Processamento de Linguagem Natural** (Ibmec, 2º semestre de 2026, Prof. Anderson Vanin), baseado no repositório da disciplina: [ProfAndersonVanin/IBM3130-PLN-2026](https://github.com/ProfAndersonVanin/IBM3130-PLN-2026).
 
 ## Problema
 
-Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, os fatos relevantes publicados na CVM e as notícias sobre as empresas em que investe. Ler tudo manualmente é lento. O Portfolio Radar lê esses textos, classifica o tom de cada um para o investidor, extrai as entidades citadas e permite consultar os resultados por um chatbot.
+Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, as notícias sobre as empresas em que investe, espalhadas por vários sites de jornais. Ler tudo manualmente é lento. O Portfolio Radar coleta manchetes desses sites (via RSS), classifica cada uma como **boa, ruim ou neutra para o investidor da empresa citada**, extrai as entidades mencionadas e permite consultar os resultados por um chatbot.
+
+Extensão opcional: incluir os fatos relevantes publicados na CVM.
 
 ## Componentes
 
 | Componente | O que faz no projeto | Aula de referência |
 |---|---|---|
-| Pré-processamento | Limpeza dos textos da CVM e das manchetes | Semanas 2–4 |
-| Análise de sentimentos | Positivo / negativo / neutro para o investidor | Semanas 8 e 12 |
+| Pré-processamento | Limpeza das manchetes e remoção de notícias duplicadas | Semanas 2–4 |
+| Análise de sentimentos | Boa / ruim / neutra para o investidor | Semanas 8 e 12 |
 | NER | Empresas, tickers, pessoas, valores e datas (spaCy + `EntityRuler`) | Semana 8 |
 | Rede neural | Classificador LSTM/GRU (Keras) como baseline | Semana 10 |
 | Transformer | BERT em português pré-treinado, comparado ao LSTM | Semana 11 |
