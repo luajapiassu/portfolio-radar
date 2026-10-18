@@ -2,8 +2,6 @@
 
 Radar de fatos relevantes e manchetes financeiras para uma carteira de ações, com Processamento de Linguagem Natural.
 
-Projeto final da disciplina **IBM3130 — Processamento de Linguagem Natural** (Ibmec, 2º semestre de 2026, Prof. Anderson Vanin), baseado no repositório da disciplina: [ProfAndersonVanin/IBM3130-PLN-2026](https://github.com/ProfAndersonVanin/IBM3130-PLN-2026).
-
 ## Problema
 
 Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, os fatos relevantes publicados na CVM e as notícias sobre as empresas em que investe. Ler tudo manualmente é lento. O Portfolio Radar lê esses textos, classifica o tom de cada um para o investidor, extrai as entidades citadas e permite consultar os resultados por um chatbot.
