@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.env
+.DS_Store
+# dados brutos baixados ficam fora do git
+data/raw/
+data/processed/

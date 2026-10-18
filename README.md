@@ -1,0 +1,61 @@
+# Portfolio Radar
+
+Radar de fatos relevantes e manchetes financeiras para uma carteira de ações, com Processamento de Linguagem Natural.
+
+Projeto final da disciplina **IBM3130 — Processamento de Linguagem Natural** (Ibmec, 2º semestre de 2026, Prof. Anderson Vanin), baseado no repositório da disciplina: [ProfAndersonVanin/IBM3130-PLN-2026](https://github.com/ProfAndersonVanin/IBM3130-PLN-2026).
+
+## Problema
+
+Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, os fatos relevantes publicados na CVM e as notícias sobre as empresas em que investe. Ler tudo manualmente é lento. O Portfolio Radar lê esses textos, classifica o tom de cada um para o investidor, extrai as entidades citadas e permite consultar os resultados por um chatbot.
+
+## Componentes
+
+| Componente | O que faz no projeto | Aula de referência |
+|---|---|---|
+| Pré-processamento | Limpeza dos textos da CVM e das manchetes | Semanas 2–4 |
+| Análise de sentimentos | Positivo / negativo / neutro para o investidor | Semanas 8 e 12 |
+| NER | Empresas, tickers, pessoas, valores e datas (spaCy + `EntityRuler`) | Semana 8 |
+| Rede neural | Classificador LSTM/GRU (Keras) como baseline | Semana 10 |
+| Transformer | BERT em português pré-treinado, comparado ao LSTM | Semana 11 |
+| Chatbot | Perguntas em linguagem natural respondidas só com os dados processados | Semana 13 |
+
+## Estrutura
+
+```
+portfolio-radar/
+├── data/            # Dados de exemplo e instruções para obtê-los
+├── notebooks/       # Experimentos: sentimentos, NER, rede neural, Transformer
+├── src/             # Código da aplicação integrada
+├── reports/         # Relatório técnico, gráficos e resultados
+└── requirements.txt
+```
+
+## Como executar
+
+```bash
+pip install -r requirements.txt
+python -m spacy download pt_core_news_sm
+```
+
+Os notebooks também rodam no Google Colab.
+
+## Cronograma
+
+| Data | Entrega |
+|---|---|
+| 22/10/2026 | Proposta + experimento de sentimentos |
+| 29/10/2026 | Experimentos de NER e rede neural |
+| 09/11/2026 | Experimento com Transformer + protótipo, relatório e código |
+| 16/11/2026 | Apresentação |
+
+## Integrantes
+
+- _a definir_
+
+## Ética e dados
+
+Usamos apenas dados públicos. A carteira é fictícia ou baseada em índice público; nenhuma posição real ou dado interno de gestora é utilizado. O sistema não é recomendação de investimento.
+
+## Uso de IA generativa
+
+Conforme a política da disciplina, o uso de ferramentas de IA (Claude) no código e na escrita será documentado no relatório.
