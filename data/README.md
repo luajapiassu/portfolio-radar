@@ -1,6 +1,6 @@
 # Dados
 
-Dados brutos não são versionados (`data/raw/` está no `.gitignore`).
+Dados brutos não são versionados (`data/raw/` está no `.gitignore`). Ficam versionados só a carteira e a planilha de teste revisada (`teste_revisao.xlsx`, 200 manchetes).
 
 | Fonte | Conteúdo | Uso / licença |
 |---|---|---|

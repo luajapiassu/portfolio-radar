@@ -30,24 +30,22 @@ portfolio-radar/
 └── requirements.txt
 ```
 
-## Notebooks
-
-Rodam no Google Colab (GPU T4 para os que usam modelos) e leem/gravam os dados em `MyDrive/portfolio-radar/` no Google Drive.
-
-| Notebook | O que faz | Gera no Drive |
-|---|---|---|
-| `01_coleta_rss.ipynb` | Coleta manchetes via RSS e Google News e filtra as que citam empresas da carteira (`data/carteira.csv`) | `manchetes.csv`, `manchetes_filtradas.csv` |
-| `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `rotulagem.xlsx`, `amostra_rotulagem.csv` |
-| `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `resultado_sentimentos.csv` |
-
-Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. A planilha revisada precisa estar no Drive antes de rodar o 03.
-
-## Como executar localmente
+## Como executar
 
 ```bash
 pip install -r requirements.txt
 python -m spacy download pt_core_news_sm
 ```
+
+Os notebooks rodam localmente (VS Code ou Jupyter), a partir da pasta `notebooks/`. Não precisam de GPU.
+
+| Notebook | O que faz | Gera |
+|---|---|---|
+| `01_coleta_rss.ipynb` | Coleta manchetes via RSS e Google News e filtra as que citam empresas da carteira (`data/carteira.csv`) | `data/raw/manchetes.csv`, `data/raw/manchetes_filtradas.csv` |
+| `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `data/raw/rotulagem.xlsx`, `data/raw/amostra_rotulagem.csv` |
+| `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `Entregas/27-10-2026/resultado_sentimentos.csv` |
+
+Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `data/teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. O notebook 03 só depende dessa planilha, então roda direto a partir do repositório.
 
 ## Cronograma
 
