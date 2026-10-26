@@ -11,3 +11,5 @@ Dados brutos não são versionados (`data/raw/` está no `.gitignore`).
 Exemplo: "Petrobras reajusta preço da gasolina" é ruim para o consumidor, mas boa para o acionista.
 
 **Carteira:** fictícia ou baseada em índice público. Nenhum dado interno ou posição real de gestora é usado.
+
+`carteira.csv` lista as 20 empresas (maiores da B3 por valor de mercado, sem a Itaúsa por duplicar o Itaú). A coluna `apelidos` traz as formas de citar cada empresa, separadas por `|`. A coluna `apelidos_ambiguos` repete os apelidos que também são palavras comuns ou outras entidades (ex.: "Vale", "Vivo", "Localiza"); no filtro eles exigem a grafia exata e a manchete vai para revisão manual.

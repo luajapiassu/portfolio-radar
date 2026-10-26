@@ -1,0 +1,21 @@
+ticker,empresa,setor,apelidos,apelidos_ambiguos
+PETR4,Petrobras,Petróleo,Petrobras|Petrobrás|PETR4|PETR3,
+ITUB4,Itaú Unibanco,Banco,Itaú Unibanco|Itaú|ITUB4|ITUB3,
+VALE3,Vale,Mineração,Vale|VALE3,Vale
+ABEV3,Ambev,Bebidas,Ambev|ABEV3,
+BPAC11,BTG Pactual,Banco,BTG Pactual|BTG|BPAC11,
+BBAS3,Banco do Brasil,Banco,Banco do Brasil|BBAS3,
+BBDC4,Bradesco,Banco,Bradesco|BBDC4|BBDC3,
+WEGE3,WEG,Indústria,WEG|WEGE3,
+SANB11,Santander Brasil,Banco,Santander Brasil|Santander|SANB11,Santander
+SBSP3,Sabesp,Saneamento,Sabesp|SBSP3,
+ELET3,Eletrobras,Energia,Eletrobras|Eletrobrás|Axia Energia|Axia|ELET3|ELET6,
+EMBR3,Embraer,Aviação,Embraer|EMBR3,
+B3SA3,B3,Bolsa,B3|B3SA3,B3
+SUZB3,Suzano,Papel e celulose,Suzano|SUZB3,Suzano
+RDOR3,Rede D'Or,Saúde,Rede D'Or|Rede D’Or|RDOR3,
+VIVT3,Telefônica Brasil,Telecom,Telefônica Brasil|Telefônica|Vivo|VIVT3,Telefônica|Vivo
+RENT3,Localiza,Aluguel de carros,Localiza|RENT3,Localiza
+EQTL3,Equatorial,Energia,Equatorial Energia|Equatorial|EQTL3,Equatorial
+RADL3,Raia Drogasil,Varejo farmacêutico,Raia Drogasil|RD Saúde|Drogasil|Droga Raia|RADL3,
+PRIO3,Prio,Petróleo,Prio|PetroRio|PRIO3,
