@@ -42,10 +42,10 @@ Os notebooks rodam localmente (VS Code ou Jupyter), a partir da pasta `notebooks
 | Notebook | O que faz | Gera |
 |---|---|---|
 | `01_coleta_rss.ipynb` | Coleta manchetes via RSS e Google News e filtra as que citam empresas da carteira (`data/carteira.csv`) | `data/raw/manchetes.csv`, `data/raw/manchetes_filtradas.csv` |
-| `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `data/raw/rotulagem.xlsx`, `data/raw/amostra_rotulagem.csv` |
+| `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `data/raw/rotulagem.csv`, `data/raw/amostra_rotulagem.csv` |
 | `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `Entregas/27-10-2026/resultado_sentimentos.csv` |
 
-Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `data/teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. O notebook 03 só depende dessa planilha, então roda direto a partir do repositório.
+Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `data/teste_revisao.csv`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. O notebook 03 só depende dessa planilha, então roda direto a partir do repositório.
 
 ## Cronograma
 
