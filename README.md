@@ -4,7 +4,7 @@ Radar de notícias financeiras para uma carteira de ações, com Processamento d
 
 ## Problema
 
-Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, as notícias sobre as empresas em que investe, espalhadas por vários sites de jornais. Ler tudo manualmente é lento. O Portfolio Radar coleta manchetes desses sites (via RSS), classifica cada uma como **boa, ruim ou neutra para o investidor da empresa citada**, extrai as entidades mencionadas e permite consultar os resultados por um chatbot.
+Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, as notícias sobre as empresas em que investe, espalhadas por vários sites de jornais. Ler tudo manualmente é lento. O Portfolio Radar coleta manchetes desses sites (via RSS e busca do Google News), classifica cada uma como **boa, ruim ou neutra para o investidor da empresa citada**, extrai as entidades mencionadas e permite consultar os resultados por um chatbot.
 
 Extensão opcional: incluir os fatos relevantes publicados na CVM.
 
@@ -30,14 +30,24 @@ portfolio-radar/
 └── requirements.txt
 ```
 
-## Como executar
+## Notebooks
+
+Rodam no Google Colab (GPU T4 para os que usam modelos) e leem/gravam os dados em `MyDrive/portfolio-radar/` no Google Drive.
+
+| Notebook | O que faz | Gera no Drive |
+|---|---|---|
+| `01_coleta_rss.ipynb` | Coleta manchetes via RSS e Google News e filtra as que citam empresas da carteira (`data/carteira.csv`) | `manchetes.csv`, `manchetes_filtradas.csv` |
+| `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `rotulagem.xlsx`, `amostra_rotulagem.csv` |
+| `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `resultado_sentimentos.xlsx` |
+
+Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/2026-10-22/guia_rotulagem.md`. A planilha revisada precisa estar no Drive antes de rodar o 03.
+
+## Como executar localmente
 
 ```bash
 pip install -r requirements.txt
 python -m spacy download pt_core_news_sm
 ```
-
-Os notebooks também rodam no Google Colab.
 
 ## Cronograma
 
