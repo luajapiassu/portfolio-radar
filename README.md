@@ -38,7 +38,7 @@ Rodam no Google Colab (GPU T4 para os que usam modelos) e leem/gravam os dados e
 |---|---|---|
 | `01_coleta_rss.ipynb` | Coleta manchetes via RSS e Google News e filtra as que citam empresas da carteira (`data/carteira.csv`) | `manchetes.csv`, `manchetes_filtradas.csv` |
 | `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `rotulagem.xlsx`, `amostra_rotulagem.csv` |
-| `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `resultado_sentimentos.xlsx` |
+| `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `resultado_sentimentos.csv`, `exemplos_sentimentos.csv` |
 
 Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. A planilha revisada precisa estar no Drive antes de rodar o 03.
 
