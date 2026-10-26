@@ -26,7 +26,7 @@ portfolio-radar/
 ├── data/            # Dados de exemplo e instruções para obtê-los
 ├── notebooks/       # Experimentos: sentimentos, NER, rede neural, Transformer
 ├── src/             # Código da aplicação integrada
-├── reports/         # Relatório técnico, gráficos e resultados
+├── Entregas/        # Uma subpasta por data de entrega (proposta, relatório, resultados)
 └── requirements.txt
 ```
 
