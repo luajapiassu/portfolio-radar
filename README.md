@@ -26,7 +26,7 @@ portfolio-radar/
 ├── data/            # Dados de exemplo e instruções para obtê-los
 ├── notebooks/       # Experimentos: sentimentos, NER, rede neural, Transformer
 ├── src/             # Código da aplicação integrada
-├── Entregas/        # Uma subpasta por data de entrega (proposta, relatório, resultados)
+├── Entregas/        # Uma subpasta por data de entrega (DD-MM-AAAA): proposta, relatório, resultados
 └── requirements.txt
 ```
 
@@ -40,7 +40,7 @@ Rodam no Google Colab (GPU T4 para os que usam modelos) e leem/gravam os dados e
 | `02_prerrotulo_finbert.ipynb` | Sorteia 500 manchetes (25 por empresa) para rotulagem | `rotulagem.xlsx`, `amostra_rotulagem.csv` |
 | `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, testa exemplos por classe e registra os erros | `resultado_sentimentos.xlsx` |
 
-Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/2026-10-22/guia_rotulagem.md`. A planilha revisada precisa estar no Drive antes de rodar o 03.
+Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `teste_revisao.xlsx`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. A planilha revisada precisa estar no Drive antes de rodar o 03.
 
 ## Como executar localmente
 
