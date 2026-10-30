@@ -1,0 +1,201 @@
+id,empresa,manchete,rotulo,TF-IDF + LR (todas as bases),BiLSTM,GRU,BiLSTM + ajuste fino,FinBERT-PT-BR
+M0001,SANB11,"Santander Brasil (SANB11) aprova JCP de R$ 0,40 por unit",boa,neutra,neutra,neutra,neutra,neutra
+M0002,BBAS3,Banco do Brasil (BBAS3) Antecipa R$ 197 Milhões em JCP; Veja Quem Recebe e Quando Cai na Conta,boa,ruim,ruim,ruim,ruim,neutra
+M0003,SANB11,Santander prossegue com OPA voluntária e pede à CVM registro de emissor estrangeiro,boa,neutra,neutra,neutra,neutra,neutra
+M0004,EMBR3,Embraer (EMBJ3): comprar agora ou esperar uma queda?,neutra,neutra,neutra,neutra,ruim,neutra
+M0005,BPAC11,BTG (BPAC11) recebe licença para operar como banco no Peru,boa,neutra,neutra,neutra,neutra,neutra
+M0006,SBSP3,"Valor 1000: Sabesp, líder do setor de água, saneamento e serviços ambientais, acelera para antecipar metas",boa,neutra,neutra,ruim,neutra,boa
+M0007,SBSP3,Obras da Sabesp provocam nova interdição temporária na Maranduba,neutra,boa,neutra,boa,neutra,ruim
+M0008,BPAC11,Gestora alemã AllianzGI fecha acordo de distribuição com BTG Pactual Asset,boa,neutra,neutra,boa,neutra,neutra
+M0009,BBAS3,JP Morgan 'manda vender' ação do Banco do Brasil (BBAS3) após rali eleitoral — e elege outro bancão para comprar agora,ruim,neutra,boa,neutra,ruim,ruim
+M0010,VIVT3,Telefônica Brasil vai incorporar a subsidiária FiBrasil,neutra,boa,boa,boa,boa,neutra
+M0011,ABEV3,Ambev sente a ressaca da Copa,ruim,neutra,neutra,neutra,neutra,ruim
+M0012,EQTL3,Motociclista morre após colisão com carro de prestadora de serviços da Equatorial em Maceió,ruim,ruim,neutra,neutra,neutra,ruim
+M0013,SUZB3,Suzano (SUZB3): Recebe Notificação de Aquisição de Ações pela BlackRock,neutra,neutra,neutra,neutra,neutra,neutra
+M0014,BBDC4,Bradesco Vida e Previdência reforça liderança em Pernambuco durante Roadshow em Recife,boa,boa,neutra,neutra,neutra,boa
+M0017,WEGE3,WEG (WEGE3) explode após balanço; entenda o que animou a Bolsa,boa,ruim,ruim,neutra,ruim,ruim
+M0018,B3SA3,Juros americanos disparam e B3 lança quatro novos contratos para negociar títulos dos EUA,boa,neutra,neutra,neutra,neutra,ruim
+M0019,RDOR3,Rede D'Or (RDOR3) registra acordo de acionistas por 20 anos,neutra,neutra,neutra,boa,neutra,boa
+M0021,WEGE3,"Fim da escala 6×1 deve mudar jornadas da WEG, que incluem 6×2 e “semana espanhola”",neutra,boa,neutra,neutra,neutra,ruim
+M0023,RADL3,JP1: Raia Drogasil é condenada a pagar 10 milhões em multas a clientes,ruim,boa,ruim,ruim,ruim,ruim
+M0025,BBDC4,Bradesco é condenado a pagar R$ 53 mil após golpe com falsa central telefônica,ruim,ruim,ruim,ruim,ruim,ruim
+M0026,VIVT3,Telefônica Brasil (VIVT3) pagará R$ 365 milhões em JCP,boa,ruim,neutra,ruim,neutra,ruim
+M0028,ITUB4,Itaú Unibanco (ITUB4) emite R$ 5 bi em letras financeiras,neutra,neutra,neutra,neutra,neutra,boa
+M0029,BPAC11,"André Esteves, do BTG Pactual, circula por Salvador e prestigia festa no Centro Histórico",neutra,boa,neutra,neutra,neutra,neutra
+M0030,RENT3,Localiza reverte prejuízo e lucra R$ 1 bilhão no 2º trimestre,boa,ruim,ruim,ruim,ruim,ruim
+M0032,RENT3,"Localiza (RENT3) dispara no radar do Citi: banco eleva preço-alvo, mas faz alerta",boa,neutra,neutra,boa,neutra,neutra
+M0034,EMBR3,Embraer e Saab realizam com sucesso o primeiro voo do caça Gripen fabricado no Brasil,boa,neutra,neutra,neutra,neutra,boa
+M0035,ABEV3,Ambev se prepara para enfrentar clima mais quente por Super El Niño,neutra,boa,boa,boa,boa,ruim
+M0036,RENT3,"Localiza (RENT3) põe R$ 614,9 milhões na mesa; veja quem recebe",boa,neutra,neutra,neutra,neutra,neutra
+M0039,ITUB4,"Itaú (ITUB4) tem lucro recorrente de R$ 12,4 bilhões no 2T26, alta anual de 7,8%",boa,boa,boa,boa,boa,boa
+M0041,SBSP3,Sabesp e Emae mantêm assembleias para incorporação de ações em meio à ofensiva de acionista,neutra,neutra,neutra,neutra,neutra,neutra
+M0042,BBDC4,Sindicato realiza protesto na agência do Bradesco da Barão contra demissões e fechamento de unidades,neutra,ruim,ruim,ruim,ruim,ruim
+M0044,EQTL3,Grupo Equatorial lança edital de Eficiência Energética com R$ 61 milhões para financiamento de projetos,neutra,neutra,neutra,neutra,neutra,boa
+M0053,ELET3,STF homologa acordo sobre participação da União na Eletrobras,boa,neutra,neutra,neutra,neutra,neutra
+M0054,SUZB3,Suzano adquire participação na Imetame Logística,boa,neutra,neutra,neutra,neutra,boa
+M0055,EQTL3,Equatorial Maranhão realiza troca de geladeiras e ventiladores em diversos municípios do estado,neutra,neutra,neutra,ruim,neutra,neutra
+M0056,BBAS3,Banco do Brasil lança novo aplicativo com foco em IA e personalização,neutra,neutra,neutra,neutra,neutra,boa
+M0057,ELET3,"Privatização da Eletrobras foi ""maior roubo do país"", diz Lula",ruim,neutra,neutra,ruim,neutra,ruim
+M0058,ABEV3,"Lucro da Ambev (ABEV3) supera expectativa no 2T26, mas ação chega a cair 3%. Por que o resultado não convenceu?",ruim,ruim,ruim,ruim,ruim,boa
+M0061,WEGE3,Dados Históricos Weg Sa - WEGE3 | ADVFN Brasil,neutra,neutra,neutra,neutra,neutra,neutra
+M0062,PRIO3,"PRIO abre 7 vagas de emprego no Rio de Janeiro para operadores, engenheiros e especialistas em petróleo, com oportunidades offshore e contratação efetiva",neutra,ruim,ruim,ruim,ruim,neutra
+M0063,RDOR3,Rede D’Or aprova distribuição de JCP no total de R$ 400 milhões,boa,boa,boa,boa,boa,neutra
+M0065,BBDC4,"Em nova campanha, Bradesco destaca pioneirismo em IA",neutra,neutra,neutra,neutra,neutra,boa
+M0068,B3SA3,"Opções na B3 batem recorde em 2026 com volume diário de R$ 1,4 bilhão e alta de 79%",boa,boa,boa,boa,boa,boa
+M0069,PETR4,Petrobras diz que já recebeu R$ 16 bi de programas de subvenção a preços de combustíveis,boa,neutra,neutra,neutra,neutra,ruim
+M0073,RADL3,Safra troca RD Saúde (RADL3) por Porto Seguro (PSSA3) na carteira Top 10 Ações; veja o portfólio,ruim,neutra,neutra,neutra,neutra,neutra
+M0075,RDOR3,Rede D’Or e BradSaúde mudam de escala em Minas e acirram disputa com Mater Dei e Unimed BH,boa,neutra,neutra,neutra,neutra,ruim
+M0077,PRIO3,"Produção da Prio avança em setembro e 3º trimestre alcança média diária de 191,6 mil boepd",boa,neutra,neutra,neutra,neutra,boa
+M0088,SUZB3,Estudantes de Ribas do Rio Pardo exploram o Cerrado em expedição da Suzano,neutra,neutra,neutra,neutra,neutra,neutra
+M0089,RDOR3,Bradsaúde (SAUD3) e Rede D’Or (RDOR3) ampliam parceria com novo projeto em Jundiaí,boa,neutra,neutra,neutra,neutra,boa
+M0091,SBSP3,"Casas Bahia (BHIA3), Cemig (CMIG4), BRB (BSLI3), Sabesp (SBSP3) e mais: Veja os destaques das empresas",neutra,neutra,neutra,neutra,neutra,neutra
+M0092,VIVT3,"Vivo (VIVT3): resultado do 2T26, alavancagem operacional e perspectivas",neutra,neutra,neutra,neutra,neutra,boa
+M0093,SANB11,Santander propõe comprar fatia restante do Santander Brasil com prêmio de 15%,boa,neutra,neutra,neutra,neutra,neutra
+M0095,VALE3,Vale (VALE3) conclui transação de controle do Complexo de Thompson,neutra,neutra,neutra,neutra,neutra,neutra
+M0097,BBDC4,Grupo Bradesco Seguros conquista bronze em premiação internacional de inovação,neutra,neutra,neutra,boa,neutra,boa
+M0098,BBDC4,Bradesco registra grande procura no primeiro dia de atendimento aos servidores de Araçatuba,neutra,ruim,ruim,ruim,ruim,boa
+M0101,PETR4,"Cheia de lances incomuns, disputa bilionária envolvendo a Petrobras entra na pauta do TJRJ",ruim,neutra,neutra,neutra,neutra,ruim
+M0102,VALE3,"Para CEO da Vale, operação de cobre da companhia ainda é subestimada pelo mercado",boa,neutra,neutra,neutra,neutra,neutra
+M0105,RENT3,"Home office acabou? Não para essas empresas: Localiza, PagBank, Wellhub e mais 6 estão com vagas CLT abertas",neutra,boa,ruim,ruim,ruim,neutra
+M0107,RDOR3,Rede D’Or (RDOR3) e Bradsaúde (SAUD3) avançam com compra de ativos para novo hospital em Jundiaí,boa,neutra,neutra,neutra,neutra,boa
+M0120,B3SA3,"B3 (B3SA3): volume negociado em ações sobe 45,7% em setembro de 2026",boa,boa,boa,boa,boa,boa
+M0122,EQTL3,Prefeitura e Equatorial discutem retirada de fios inutilizados dos postes de Imperatriz,neutra,neutra,neutra,neutra,neutra,ruim
+M0123,RDOR3,"Rede D’Or (RDOR3) cresce como nunca, mas imposto rouba a cena e frustra mercado",ruim,neutra,neutra,neutra,neutra,ruim
+M0125,PETR4,Petrobras alcança valor de mercado de R$ 800 bilhões,boa,neutra,neutra,neutra,neutra,boa
+M0127,SUZB3,Suzano cria ponto permanente de vendas em Mucuri e amplia mercado para pequenos empreendedores do Extremo Sul da Bahia,neutra,neutra,neutra,neutra,neutra,boa
+M0130,RENT3,Localiza e Azul apresentam avião envelopado e ações a bordo em parceria de marca,neutra,boa,neutra,neutra,neutra,neutra
+M0131,B3SA3,"B3 (B3SA3): setembro foi razoável, mas o melhor está guardado para o fim do ano",boa,neutra,neutra,neutra,neutra,neutra
+M0135,ELET3,Por que empresas como CCR e Eletrobras trocaram de nome,neutra,boa,neutra,neutra,neutra,neutra
+M0136,BBAS3,Banco do Brasil prepara Cofrinho de Proventos para investidores,neutra,neutra,neutra,neutra,neutra,neutra
+M0137,EQTL3,Equatorial Pará abre vagas para eletricistas em 13 municípios do sul e sudeste do Estado,neutra,neutra,neutra,ruim,ruim,neutra
+M0138,ABEV3,Ambev usa IA e Zé Delivery como laboratório para testar novos produtos,neutra,neutra,boa,neutra,neutra,neutra
+M0139,ABEV3,"Ambev (ABEV3), Motiva (MOTV3), Intelbras (INTB3), Paranapanema (PMAM3): Veja os destaques das empresas",neutra,neutra,neutra,neutra,neutra,neutra
+M0141,BBAS3,"Ibovespa nas alturas com ajuste fiscal, Banco do Brasil (BBAS3) em queda e as promessas de Flávio: os destaques da semana",ruim,ruim,ruim,ruim,ruim,ruim
+M0143,WEGE3,WEG (WEGE3) vira uma das melhores geradoras de valor no longo prazo; ações disparam,boa,boa,neutra,neutra,neutra,boa
+M0146,PRIO3,Prio (PRIO3) cai pela 2ª semana e testa suporte; o que esperar da ação?,ruim,ruim,ruim,ruim,ruim,ruim
+M0148,ITUB4,"(ITUB4) - ATENCAO PARA O CALL - PRECO R$ 50,00",neutra,neutra,neutra,neutra,neutra,neutra
+M0151,ABEV3,"Volumes da Ambev decepcionam durante a Copa, e ações caem",ruim,ruim,neutra,ruim,neutra,ruim
+M0152,BPAC11,BTG Pactual (BPAC11) aprova distribuição de JCP; veja valor por ação,boa,boa,neutra,neutra,neutra,neutra
+M0155,VIVT3,A dona da Vivo (VIVT3) vai colocar quase meio bilhão de reais no bolso dos acionistas,boa,neutra,neutra,neutra,neutra,neutra
+M0157,ABEV3,Confira a análise do BB-BI do resultado 2T26 da Ambev (ABEV3),neutra,neutra,neutra,neutra,neutra,neutra
+M0159,SUZB3,Suzano destaca papel da natureza nas decisões financeiras durante a Climate Week NYC,neutra,neutra,neutra,neutra,neutra,neutra
+M0166,VIVT3,Telefônica Brasil (VIVT3): ainda vale manter posição na ação?,neutra,boa,boa,boa,boa,neutra
+M0167,B3SA3,"Mesmo após alta de 50%, B3 ganha nova aposta de valorização do UBS BB",boa,boa,boa,boa,boa,boa
+M0171,B3SA3,"Custo da Bolsa no Brasil pode ser 20 vezes maior do que em outros países, diz CEO da Base Exchange, futura concorrente da B3",ruim,boa,neutra,boa,neutra,neutra
+M0172,EMBR3,Embraer entrega o primeiro C-390 Millennium à Força Aérea do Uzbequistão,boa,boa,boa,boa,boa,neutra
+M0173,WEGE3,WEGE3 (WEG ON NM),neutra,neutra,neutra,neutra,neutra,neutra
+M0175,BPAC11,Terminal BTG Pactual e Lufthansa Group celebram 100 dias de parceria,neutra,neutra,neutra,neutra,neutra,boa
+M0180,SANB11,"Santander (SANB11): Lucro tomba 17,6% e soma R$ 3 bi no 2T26",ruim,boa,boa,neutra,boa,ruim
+M0184,RADL3,GPA (PCAR3) vende ativo à RD Saúde (RADL3) em meio à reestruturação; entenda o movimento,boa,neutra,neutra,neutra,neutra,neutra
+M0185,VIVT3,Telefônica (VIVT3) derrete mais de 6% após resultado do 2T26; entenda,ruim,boa,boa,neutra,boa,ruim
+M0187,SANB11,Santander Brasil promove Eduardo Álvarez,neutra,neutra,neutra,neutra,neutra,neutra
+M0188,BBAS3,Compra de BBAS3,neutra,neutra,neutra,neutra,neutra,boa
+M0195,BPAC11,BTG aposta em gamificação para fidelizar clientes desde a infância,neutra,boa,boa,boa,boa,boa
+M0197,ELET3,STJ avalia impacto de revisão de teses dos juros da Eletrobras em casos definitivos,neutra,neutra,neutra,neutra,neutra,ruim
+M0203,PETR4,Petrobras atinge R$ 800 bilhões e bate mais um recorde de valor de mercado,boa,neutra,neutra,neutra,neutra,boa
+M0204,EMBR3,Embraer assina Pool com a Latam para dar suporte a novas 24 aeronaves,boa,boa,boa,boa,boa,boa
+M0205,EMBR3,Azul investiga decolagem tardia feita pelo seu avião Embraer E2 no aeroporto de Congonhas,neutra,neutra,neutra,neutra,neutra,ruim
+M0206,EQTL3,Azonasul se reúne com a CEEE Equatorial para tratar do restabelecimento de energia na região,neutra,neutra,neutra,neutra,neutra,neutra
+M0207,PETR4,Petrobras atinge R$ 800 bilhões em valor de mercado pela 1ª vez,boa,ruim,ruim,ruim,ruim,boa
+M0209,WEGE3,Fábrica de bilionários ganha mais herdeiros: as três famílias controladoras da WEG chegam a 102 acionistas,neutra,boa,neutra,neutra,neutra,boa
+M0210,SANB11,Santander quer comprar seu papel SANB11 — mas o que o minoritário ganha ao trocar as ações por BDRs?,neutra,neutra,neutra,neutra,neutra,neutra
+M0211,PRIO3,"CSN (CSNA3), Energisa (ENGI11), Prio (PRIO3) e GPS (GGPS3): Veja os destaques das empresas",neutra,neutra,neutra,neutra,neutra,neutra
+M0213,RDOR3,Rede D’Or ou Bradsaúde? UBS BB revela as ações de saúde que atraem investidores,neutra,neutra,neutra,boa,neutra,neutra
+M0215,PRIO3,PRIO (PRIO3) registra vitória em blocos Magnetita e Hematita da ANP,boa,neutra,neutra,neutra,neutra,neutra
+M0217,SBSP3,Manutenção da Sabesp pode afetar abastecimento de água,neutra,ruim,neutra,ruim,ruim,ruim
+M0219,SANB11,"Alta do Santander é puxada pela OPA, mas fundamentos frágeis colocam limite no rali",neutra,boa,ruim,ruim,ruim,ruim
+M0220,PETR4,PETR4: análise técnica gráfica semanal da ação da Petrobras,neutra,neutra,neutra,neutra,neutra,neutra
+M0221,SBSP3,Sabesp alivia restrição sobre consumo de água,neutra,neutra,neutra,neutra,neutra,ruim
+M0225,ELET3,"Pagamento de R$ 2,6 bi de União e ex-Eletrobras encerra disputa de 30 anos sobre privatização no Piauí",boa,neutra,neutra,neutra,neutra,ruim
+M0230,BBAS3,Banco do Brasil pode vender ações da BB Seguridade? BBSE3 enfrenta alerta para 2027 mesmo com dividendos de até 10%,neutra,ruim,ruim,ruim,ruim,ruim
+M0232,BBDC4,Bancários do Bradesco fortalecem mobilização para a Campanha Nacional,neutra,neutra,neutra,neutra,neutra,neutra
+M0236,RENT3,Localiza (RENT3): Goldman corta preço-alvo e aponta riscos para os resultados do 2T26,ruim,neutra,neutra,neutra,ruim,ruim
+M0239,EMBR3,Embraer (EMBJ3) bate recorde de entregas; Safra destaca avanço rumo às metas,boa,neutra,boa,boa,boa,boa
+M0242,EQTL3,Equatorial Maranhão promove Mutirão pelo Cliente Todo Dia em três municípios do estado,neutra,boa,neutra,boa,neutra,neutra
+M0244,ABEV3,Cerveja com proteína atrai novos consumidores para mercado sem álcool da Ambev,boa,ruim,neutra,boa,neutra,boa
+M0245,SBSP3,Sabesp registra mais de 20 mil furtos de hidrômetros em São Paulo,neutra,ruim,neutra,ruim,neutra,ruim
+M0246,BPAC11,IAnálise: Banco BTG Pactual (BPAC11),neutra,neutra,neutra,neutra,neutra,neutra
+M0247,BBDC4,Leilão do Bradesco pode reduzir lances em até R$ 263 mil; casa em Feira de Santana está na lista,neutra,neutra,neutra,neutra,neutra,ruim
+M0251,VIVT3,"Telefônica Brasil (VIVT3), dona da Vivo, adquire Fibrasil por R$ 458,7 milhões",boa,neutra,neutra,neutra,neutra,neutra
+M0252,RADL3,"Painel S.A.: Raia Drogasil vê vendas de protetor solar crescerem não com calor, mas com radiação UV",neutra,ruim,neutra,neutra,neutra,boa
+M0255,RADL3,Ativa vê 2º tri fraco para varejo e aponta RD Saúde (RADL3) e Mercado Livre (MELI34) como destaques,boa,neutra,neutra,neutra,neutra,ruim
+M0256,SUZB3,"BlackRock vai às compras: Suzano (SUZB3), Cogna (COGN3) e mais ações entram na lista",neutra,neutra,neutra,neutra,neutra,neutra
+M0259,ELET3,STF suspende analise de acordo entre União e Eletrobras sobre desestatização,neutra,neutra,neutra,ruim,neutra,ruim
+M0262,BPAC11,"BTG Pactual (BPAC11) no 2T26: lucro sobe 23% no 2T26 e ROE fica em 26,7%",boa,boa,boa,neutra,boa,boa
+M0263,SANB11,"Santander quer comprar sua fatia de SANB11: vale pegar o prêmio de 15% da OPA e pular fora, ou a matriz está fazendo o melhor negócio da mesa?",neutra,neutra,neutra,boa,neutra,neutra
+M0266,PETR4,"Programa da Petrobras abre 1.120 vagas em cursos gratuitos para a indústria de óleo e gás, com bolsa de até R$ 858",neutra,neutra,neutra,neutra,neutra,neutra
+M0268,BBDC4,Bradesco celebra a chegada de Rafael Câmara à Fórmula 1,neutra,neutra,neutra,neutra,neutra,neutra
+M0269,SUZB3,Suzano (SUZB3) revela 388 mil hectares sensíveis: o que o investidor precisa saber,neutra,neutra,neutra,neutra,neutra,neutra
+M0271,EQTL3,Superintendente da Equatorial prestigia 46º Círio em Marabá,neutra,boa,neutra,neutra,neutra,neutra
+M0272,ITUB4,Valor 1000: Itaú Unibanco é a Empresa de Valor 2026,neutra,neutra,neutra,neutra,neutra,neutra
+M0274,RDOR3,Rede D'Or lidera ranking global de hospitais sustentáveis,neutra,neutra,boa,boa,boa,boa
+M0275,RADL3,Raia Drogasil (RADL3) aprova pagamento de R$ 202 mi em JCP e dividendos,boa,neutra,neutra,neutra,neutra,neutra
+M0277,SBSP3,Cidade de Cubatão cobra cronograma da Sabesp e reforça continuidade das obras na Av. Ferroviária - Vila dos Pescadores,neutra,boa,neutra,boa,neutra,ruim
+M0280,ELET3,Eletrobras/Axia Energia: CNE entrega pauta de reivindicações e abre negociações para o ACT 2026/2028,neutra,neutra,neutra,ruim,neutra,neutra
+M0282,ITUB4,"Itaú (ITUB4) lucra R$ 12,4 bilhões no 2T26, acima das expectativas",boa,boa,boa,boa,boa,boa
+M0287,RADL3,"Raia Drogasil (RADL3) sobe, mas tendência ainda aponta para queda, diz analista",neutra,ruim,ruim,ruim,ruim,ruim
+M0291,SANB11,"Santander Brasil despenca 6% após lucro abaixo das expectativas, com alta das provisões de crédito",ruim,ruim,ruim,ruim,ruim,ruim
+M0294,RENT3,"Depois do ‘rali Flavio’, JP Morgan eleva Rumo e corta Localiza; Motiva é ‘top pick’",ruim,boa,boa,boa,boa,ruim
+M0295,BPAC11,"BTG Pactual registra lucro recorde de R$ 4,9 bilhões no 2T26, alta de 22,2%",boa,boa,boa,boa,boa,boa
+M0300,WEGE3,WEG aprova pagamento de R$ 450 milhões em juros sobre capital próprio,boa,neutra,neutra,neutra,neutra,neutra
+M0304,EMBR3,"Carteira de pedidos da Embraer chega a US$34,5 bilhões no 2T26, marcando 7º recorde consecutivo",boa,neutra,neutra,neutra,neutra,boa
+M0306,EQTL3,Equatorial atribui à gestão municipal responsabilidade pela rede do Terminal da Cohab,neutra,ruim,ruim,ruim,ruim,ruim
+M0307,PRIO3,PRIO S.A (PRIO3) Comparação de Concorrentes Divulgados Publicamente,neutra,neutra,ruim,ruim,ruim,neutra
+M0308,PETR4,Petrobras atinge recorde de valor de mercado após descoberta no Amapá,boa,boa,ruim,ruim,ruim,boa
+M0310,BPAC11,"Day trade: Compre BTG Pactual (BPAC11) e venda Auren (AURE3) para ganhar até 1,4% hoje (13), segundo a Ágora",boa,boa,boa,neutra,boa,boa
+M0312,ITUB4,Itaú Unibanco fecha acordo para comprar 35% da Prisma Capital,boa,neutra,neutra,boa,neutra,boa
+M0314,SBSP3,Acionistas da Sabesp aprovam incorporação de ações da Emae,neutra,neutra,neutra,neutra,neutra,boa
+M0315,ELET3,STF discute homologação de acordo que redefine participação da União na Eletrobras,neutra,neutra,neutra,neutra,neutra,neutra
+M0316,RADL3,"RD Saúde (RADL3) registra lucro de R$ 432 milhões no 2T26, alta anual de 7,4%",boa,boa,boa,neutra,boa,boa
+M0320,RENT3,Localiza aprova emissão de R$ 8 bilhões em debêntures,neutra,neutra,neutra,neutra,neutra,neutra
+M0323,B3SA3,Mercado de opções da B3 bate recorde de quase R$ 3 bilhões em um único dia e salta 79% em 2026,boa,boa,boa,boa,neutra,boa
+M0324,VIVT3,Telefônica Brasil começa a receber ofertas por imóveis que pertenciam à concessão fixa,neutra,neutra,neutra,neutra,neutra,neutra
+M0337,SBSP3,Sabesp inicia atendimento móvel nesta segunda-feira em Ubatuba,neutra,boa,neutra,ruim,ruim,boa
+M0340,BBDC4,Servidores municipais de Araçatuba já podem abrir conta no Bradesco a partir desta segunda-feira,neutra,ruim,neutra,neutra,neutra,neutra
+M0343,WEGE3,"WEG (WEGE3) está cara demais? JP Morgan liga alerta para a ação antes dos resultados do 4T25, e papéis caem quase 4% na bolsa",ruim,ruim,ruim,ruim,ruim,ruim
+M0349,ITUB4,Edital de Leilão ITAÚ UNIBANCO S/A,neutra,neutra,neutra,neutra,neutra,neutra
+M0354,PRIO3,PRIO (PRIO3) opera em queda após produção recuar 5% em agosto,ruim,ruim,ruim,ruim,ruim,ruim
+M0360,EMBR3,"Após falha em GPS da Embraer, Azul anuncia ajustes na malha e alerta para impactos em voos",ruim,ruim,ruim,ruim,ruim,ruim
+M0364,BBAS3,Banco do Brasil finaliza proposta para renovação do ACT específico,neutra,neutra,neutra,neutra,neutra,neutra
+M0365,B3SA3,B3 prepara ações ‘tokenizadas’ para 2027 e estuda ampliar negociação de ativos,boa,neutra,neutra,neutra,neutra,neutra
+M0366,B3SA3,"B3 registra alta de 45,7% no volume negociado em setembro de 2026",boa,boa,boa,boa,boa,boa
+M0369,ITUB4,Sem surpresas! Resultado do Itaú (ITUB4) veio em linha com o esperado: é hora de comprar ou vender as ações?,neutra,boa,boa,boa,boa,boa
+M0370,VALE3,Vale conclui venda do controle de complexo de níquel no Canadá,neutra,neutra,neutra,neutra,neutra,ruim
+M0382,WEGE3,Weg (WEGE3) anuncia dividendos e possível aumento de capital,boa,neutra,neutra,neutra,neutra,neutra
+M0383,ABEV3,Ambev (ABEV3) sobe contra o Ibovespa; caixa robusto sustenta leitura defensiva,boa,neutra,boa,boa,boa,ruim
+M0384,RENT3,"Localiza (RENT3), Hypera (HYPE3) e Track&Field (TFCO4) anunciam proventos",boa,neutra,neutra,neutra,neutra,neutra
+M0387,RDOR3,"O efeito colateral do fim da escala 6x1 para Rede D’Or, Hapvida e Fleury",ruim,boa,neutra,neutra,neutra,ruim
+M0397,VALE3,Vale sanciona Marcelo Gasparino por vazamento de informações confidenciais,neutra,neutra,neutra,ruim,neutra,ruim
+M0400,ITUB4,Eneva (ENEV3) recebe aporte de quase R$ 2 bilhões do Itaú (ITUB4),neutra,neutra,neutra,neutra,neutra,boa
+M0402,RADL3,"RD Saúde (RADL3) pagará R$ 159,8 milhões em JCP aos acionistas; veja quem recebe",boa,neutra,neutra,neutra,neutra,ruim
+M0404,PRIO3,Prio (PRIO3) | Qual potencial de distribuição de dividendos da Prio?,neutra,neutra,neutra,neutra,neutra,boa
+M0406,WEGE3,Alerta Estratégia Radar | Oportunidade Swing Trade Compra Weg (WEGE3) – start – 28/7/2026,boa,boa,boa,boa,boa,neutra
+M0409,PRIO3,"Prio (PRIO3) produz 192,6 mil barris por dia em setembro, alta de 3,5%",boa,boa,ruim,ruim,ruim,boa
+M0413,ITUB4,"Itaú (ITUB4) pagará R$ 3,99 bilhões em JCP; veja como receber",boa,neutra,neutra,neutra,neutra,ruim
+M0416,RDOR3,"Atlântica, da Bradsaúde (SAUD3), investe milhões em hospital de alta complexidade; entenda acordo com Rede D’Or (RDOR3)",boa,neutra,neutra,neutra,neutra,boa
+M0420,SBSP3,"Prefeitura aplica multa de R$ 16,5 milhões à Sabesp",ruim,ruim,ruim,ruim,ruim,ruim
+M0421,ABEV3,"Ambev (ABEV3): balanço deve ser positivo no 3T, mas sem bases fáceis de comparação",boa,neutra,neutra,neutra,neutra,boa
+M0422,VALE3,"Ufes, Vale e Instituto Ambiental Vale realizam oficina de jardim medicinal em homenagem ao Outubro Rosa",neutra,neutra,neutra,boa,neutra,neutra
+M0438,PETR4,Petrobras rumo ao marco de R$ 1 trilhão em valor de mercado mobiliza projeções e analistas,boa,boa,neutra,neutra,neutra,neutra
+M0439,ABEV3,Previsão ABEV3 — Preço Alvo para 2027,neutra,neutra,boa,neutra,ruim,neutra
+M0441,BBDC4,"Quem são as filhas de Amador Aguiar, acionistas do Bradesco, que participarão de aporte bilionário",neutra,neutra,neutra,neutra,neutra,neutra
+M0447,ELET3,"STF homologa acordo entre governo e Axia Energia, antiga Eletrobras",boa,neutra,neutra,neutra,neutra,neutra
+M0449,WEGE3,WEG (WEGE3) aprova pagamento anual de dividendos até 2028; confira os valores,boa,neutra,neutra,neutra,neutra,neutra
+M0450,RDOR3,"Balanço Rede D’Or (RDOR3): queda na sinistralidade da SulAmérica deve salvar o 2T26, diz Citi",boa,ruim,ruim,ruim,ruim,ruim
+M0451,PETR4,Bank of America vê Petrobras perto de R$ 1 trilhão em valor de mercado,boa,boa,boa,boa,boa,ruim
+M0453,SANB11,Sem espaço para otimismo? CFO do Santander (SANB11) faz alerta sobre rentabilidade e provisões,ruim,neutra,neutra,neutra,neutra,neutra
+M0454,BBAS3,Banco do Brasil perde força após salto de 5%; o que está mexendo com as ações?,ruim,ruim,ruim,ruim,ruim,ruim
+M0461,EMBR3,Latam prevê anunciar até quatro novos destinos com jatos Embraer em novembro,neutra,boa,boa,boa,boa,neutra
+M0462,BBAS3,Banco do Brasil (BBAS3) atualiza proventos e revela quanto pagará por ação,boa,neutra,neutra,neutra,neutra,neutra
+M0466,PRIO3,Prio (PRIO3),neutra,neutra,neutra,neutra,neutra,neutra
+M0467,ABEV3,"Ambev teve salto de 5% no volume de cerveja no Brasil, com força do premium e Copa",boa,boa,boa,boa,boa,boa
+M0469,VIVT3,"Vivo (VIVT3) entrega melhor 1º trimestre em dois anos com lucro de R$ 1,26 bilhão",boa,boa,neutra,neutra,neutra,boa
+M0470,EMBR3,Embraer minimiza impacto de eleições e vê conflitos impulsionarem setor de Defesa,boa,neutra,neutra,neutra,neutra,ruim
+M0471,RADL3,Raia Drogasil (RADL3),neutra,neutra,neutra,neutra,neutra,neutra
+M0473,EQTL3,Equatorial Alagoas investe mais de R$ 47 milhões na ampliação de subestações para fortalecer o sistema elétrico de Alagoas – Equatorial Alagoas,neutra,boa,neutra,boa,neutra,boa
+M0477,RENT3,Lucro da Localiza salta 45% no 1º trimestre,boa,ruim,neutra,neutra,neutra,boa
+M0478,PRIO3,"PRIO (PRIO3) tem baixa de 5,2% na produção em agosto",ruim,ruim,ruim,ruim,ruim,ruim
+M0480,ELET3,"Axia, ex-Eletrobras, inicia sucessão do CEO Ivan Monteiro",neutra,neutra,neutra,neutra,neutra,neutra
+M0483,SANB11,"Santander Brasil (SANB11) tem lucro de R$ 3 bilhões no 2T26, queda de 17,6%",ruim,ruim,ruim,ruim,ruim,boa
+M0487,VIVT3,VIVT3 e TIMS3: prévia de resultados do 3T26,neutra,neutra,neutra,neutra,neutra,neutra
+M0488,RENT3,"Rico anuncia vantagens especiais em parceria com Livelo, Shell Box e Localiza",neutra,boa,neutra,neutra,neutra,boa
