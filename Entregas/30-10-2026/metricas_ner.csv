@@ -1,0 +1,33 @@
+,rotulo,TP,FP,FN,precisão,revocação,F1
+A · sm puro,ORG,27,25,72,0.52,0.27,0.36
+A · sm puro,TICKER,0,0,37,,0.0,
+A · sm puro,PESSOA,7,22,1,0.24,0.88,0.38
+A · sm puro,LOCAL,9,57,0,0.14,1.0,0.24
+A · sm puro,VALOR,0,0,18,,0.0,
+A · sm puro,PERCENTUAL,0,0,16,,0.0,
+A · sm puro,PERIODO,0,0,18,,0.0,
+A · sm puro,TOTAL (micro),43,104,162,0.29,0.21,0.24
+B · lg puro,ORG,49,24,50,0.67,0.49,0.57
+B · lg puro,TICKER,0,0,37,,0.0,
+B · lg puro,PESSOA,7,9,1,0.44,0.88,0.58
+B · lg puro,LOCAL,8,42,1,0.16,0.89,0.27
+B · lg puro,VALOR,0,0,18,,0.0,
+B · lg puro,PERCENTUAL,0,0,16,,0.0,
+B · lg puro,PERIODO,0,0,18,,0.0,
+B · lg puro,TOTAL (micro),64,75,141,0.46,0.31,0.37
+C · B + carteira + regras,ORG,73,6,26,0.92,0.74,0.82
+C · B + carteira + regras,TICKER,37,0,0,1.0,1.0,1.0
+C · B + carteira + regras,PESSOA,7,6,1,0.54,0.88,0.67
+C · B + carteira + regras,LOCAL,8,17,1,0.32,0.89,0.47
+C · B + carteira + regras,VALOR,17,0,1,1.0,0.94,0.97
+C · B + carteira + regras,PERCENTUAL,16,0,0,1.0,1.0,1.0
+C · B + carteira + regras,PERIODO,18,0,0,1.0,1.0,1.0
+C · B + carteira + regras,TOTAL (micro),176,29,29,0.86,0.86,0.86
+D · C + mercado,ORG,91,2,8,0.98,0.92,0.95
+D · C + mercado,TICKER,37,0,0,1.0,1.0,1.0
+D · C + mercado,PESSOA,7,1,1,0.88,0.88,0.88
+D · C + mercado,LOCAL,8,7,1,0.53,0.89,0.67
+D · C + mercado,VALOR,17,0,1,1.0,0.94,0.97
+D · C + mercado,PERCENTUAL,16,0,0,1.0,1.0,1.0
+D · C + mercado,PERIODO,18,0,0,1.0,1.0,1.0
+D · C + mercado,TOTAL (micro),194,10,11,0.95,0.95,0.95
