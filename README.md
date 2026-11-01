@@ -49,6 +49,7 @@ Os notebooks rodam localmente (VS Code ou Jupyter), a partir da pasta `notebooks
 | `03_sentimentos_finbert.ipynb` | **Entrega de 22/10.** Classifica as manchetes revisadas com o FinBERT-PT-BR, mede precisão, revocação e F1 por classe e registra os erros | `Entregas/27-10-2026/resultado_sentimentos.csv` |
 | `04_ner.ipynb` | **Entrega de 29/10.** Compara spaCy puro (`sm` e `lg`) com spaCy + `EntityRuler` + regras e avalia o F1 por entidade em 60 manchetes anotadas (`data/ner_ouro.csv`) | `Entregas/30-10-2026/resultado_ner.csv`, `metricas_ner.csv` |
 | `05_rede_neural.ipynb` | **Entrega de 29/10.** Treina TF-IDF + Regressão Logística, BiLSTM e GRU em bases públicas rotuladas e compara com o FinBERT nas 200 manchetes revisadas | `Entregas/30-10-2026/resultado_rede_neural.csv`, `metricas_sentimento.csv` |
+| `06_treino_estendido.ipynb` | **Entrega de 09/11.** Treina 8 modelos com 5 sementes (TF-IDF, BiLSTM, GRU, embeddings multilíngues, fine-tuning de BERTimbau, FinBERT-PT-BR e XLM-R) em bases em português e inglês e compara com o FinBERT com *bootstrap*. Cria o ambiente na primeira célula; precisa de GPU (~3h30 numa RTX 3060) | `Entregas/09-11-2026/treino_estendido/completo/` |
 
 Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `data/teste_revisao.csv`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. O notebook 03 só depende dessa planilha, então roda direto a partir do repositório. O 04 também roda direto. O 05 baixa as bases públicas de treino do Hugging Face na primeira execução (~30 MB).
 
@@ -58,7 +59,7 @@ Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo suger
 |---|---|---|
 | 22/10/2026 | Proposta + experimento de sentimentos | `Entregas/27-10-2026/`, notebook 03 |
 | 29/10/2026 | Experimentos de NER e rede neural | `Entregas/30-10-2026/`, notebooks 04 e 05 |
-| 09/11/2026 | Experimento com Transformer + protótipo, relatório e código | |
+| 09/11/2026 | Experimento com Transformer + protótipo, relatório e código | `Entregas/09-11-2026/`, notebook 06 (protótipo e relatório a fazer) |
 | 16/11/2026 | Apresentação | |
 
 ## Integrantes
