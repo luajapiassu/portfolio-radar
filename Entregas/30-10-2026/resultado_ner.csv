@@ -55,20 +55,20 @@ M0095,VALE3,Vale (VALE3) conclui transação de controle do Complexo de Thompson
 M0097,BBDC4,Grupo Bradesco Seguros conquista bronze em premiação internacional de inovação,neutra,Bradesco|ORG,BBDC4,True
 M0098,BBDC4,Bradesco registra grande procura no primeiro dia de atendimento aos servidores de Araçatuba,neutra,Bradesco|ORG; Araçatuba|LOCAL,BBDC4,True
 M0101,PETR4,"Cheia de lances incomuns, disputa bilionária envolvendo a Petrobras entra na pauta do TJRJ",ruim,Petrobras|ORG; TJRJ|ORG,PETR4,True
-M0102,VALE3,"Para CEO da Vale, operação de cobre da companhia ainda é subestimada pelo mercado",boa,CEO da|ORG; Vale|ORG,VALE3,True
+M0102,VALE3,"Para CEO da Vale, operação de cobre da companhia ainda é subestimada pelo mercado",boa,Vale|ORG,VALE3,True
 M0105,RENT3,"Home office acabou? Não para essas empresas: Localiza, PagBank, Wellhub e mais 6 estão com vagas CLT abertas",neutra,Localiza|ORG; Wellhub|PESSOA,RENT3,True
 M0107,RDOR3,Rede D’Or (RDOR3) e Bradsaúde (SAUD3) avançam com compra de ativos para novo hospital em Jundiaí,boa,Rede D'Or|ORG; RDOR3|TICKER; Bradsaúde|ORG; SAUD3|TICKER; Jundiaí|LOCAL,RDOR3,True
 M0120,B3SA3,"B3 (B3SA3): volume negociado em ações sobe 45,7% em setembro de 2026",boa,"B3|ORG; B3SA3|TICKER; 45,7%|PERCENTUAL; setembro de 2026|PERIODO",B3SA3,True
-M0122,EQTL3,Prefeitura e Equatorial discutem retirada de fios inutilizados dos postes de Imperatriz,neutra,Prefeitura|LOCAL; Equatorial|ORG; Imperatriz|LOCAL,EQTL3,True
+M0122,EQTL3,Prefeitura e Equatorial discutem retirada de fios inutilizados dos postes de Imperatriz,neutra,Prefeitura|ORG; Equatorial|ORG; Imperatriz|LOCAL,EQTL3,True
 M0123,RDOR3,"Rede D’Or (RDOR3) cresce como nunca, mas imposto rouba a cena e frustra mercado",ruim,Rede D'Or|ORG; RDOR3|TICKER,RDOR3,True
 M0125,PETR4,Petrobras alcança valor de mercado de R$ 800 bilhões,boa,Petrobras|ORG; R$ 800 bilhões|VALOR,PETR4,True
 M0127,SUZB3,Suzano cria ponto permanente de vendas em Mucuri e amplia mercado para pequenos empreendedores do Extremo Sul da Bahia,neutra,Suzano|ORG; Mucuri|LOCAL; Extremo Sul|LOCAL; Bahia|LOCAL,SUZB3,True
-M0130,RENT3,Localiza e Azul apresentam avião envelopado e ações a bordo em parceria de marca,neutra,Localiza|ORG; Azul|LOCAL,RENT3,True
+M0130,RENT3,Localiza e Azul apresentam avião envelopado e ações a bordo em parceria de marca,neutra,Localiza|ORG; Azul|ORG,RENT3,True
 M0131,B3SA3,"B3 (B3SA3): setembro foi razoável, mas o melhor está guardado para o fim do ano",boa,B3|ORG; B3SA3|TICKER; setembro|PERIODO,B3SA3,True
 M0135,ELET3,Por que empresas como CCR e Eletrobras trocaram de nome,neutra,CCR|ORG; Eletrobras|ORG,ELET3,True
 M0136,BBAS3,Banco do Brasil prepara Cofrinho de Proventos para investidores,neutra,Banco do Brasil|ORG; Cofrinho de Proventos|PESSOA,BBAS3,True
 M0137,EQTL3,Equatorial Pará abre vagas para eletricistas em 13 municípios do sul e sudeste do Estado,neutra,Equatorial|ORG; Estado|LOCAL,EQTL3,True
-M0138,ABEV3,Ambev usa IA e Zé Delivery como laboratório para testar novos produtos,neutra,Ambev|ORG; Zé Delivery|PESSOA,ABEV3,True
+M0138,ABEV3,Ambev usa IA e Zé Delivery como laboratório para testar novos produtos,neutra,Ambev|ORG; Zé Delivery|ORG,ABEV3,True
 M0139,ABEV3,"Ambev (ABEV3), Motiva (MOTV3), Intelbras (INTB3), Paranapanema (PMAM3): Veja os destaques das empresas",neutra,Ambev|ORG; ABEV3|TICKER; Motiva|ORG; MOTV3|TICKER; Intelbras|ORG; INTB3|TICKER; Paranapanema|ORG; PMAM3|TICKER,ABEV3,True
 M0141,BBAS3,"Ibovespa nas alturas com ajuste fiscal, Banco do Brasil (BBAS3) em queda e as promessas de Flávio: os destaques da semana",ruim,Banco do Brasil|ORG; BBAS3|TICKER; Flávio|PESSOA,BBAS3,True
 M0143,WEGE3,WEG (WEGE3) vira uma das melhores geradoras de valor no longo prazo; ações disparam,boa,WEG|ORG; WEGE3|TICKER,WEGE3,True
@@ -81,7 +81,7 @@ M0157,ABEV3,Confira a análise do BB-BI do resultado 2T26 da Ambev (ABEV3),neutr
 M0159,SUZB3,Suzano destaca papel da natureza nas decisões financeiras durante a Climate Week NYC,neutra,Suzano|ORG,SUZB3,True
 M0166,VIVT3,Telefônica Brasil (VIVT3): ainda vale manter posição na ação?,neutra,Telefônica Brasil|ORG; VIVT3|TICKER,VIVT3,True
 M0167,B3SA3,"Mesmo após alta de 50%, B3 ganha nova aposta de valorização do UBS BB",boa,50%|PERCENTUAL; B3|ORG; UBS BB|ORG,B3SA3,True
-M0171,B3SA3,"Custo da Bolsa no Brasil pode ser 20 vezes maior do que em outros países, diz CEO da Base Exchange, futura concorrente da B3",ruim,CEO da Base Exchange|PESSOA; B3|ORG,B3SA3,True
+M0171,B3SA3,"Custo da Bolsa no Brasil pode ser 20 vezes maior do que em outros países, diz CEO da Base Exchange, futura concorrente da B3",ruim,Base Exchange|ORG; B3|ORG,B3SA3,True
 M0172,EMBR3,Embraer entrega o primeiro C-390 Millennium à Força Aérea do Uzbequistão,boa,Embraer|ORG; Força Aérea|ORG; Uzbequistão|LOCAL,EMBR3,True
 M0173,WEGE3,WEGE3 (WEG ON NM),neutra,WEGE3|TICKER; WEG|ORG; NM|ORG,WEGE3,True
 M0175,BPAC11,Terminal BTG Pactual e Lufthansa Group celebram 100 dias de parceria,neutra,BTG Pactual|ORG; Lufthansa Group|ORG,BPAC11,True
@@ -100,7 +100,7 @@ M0207,PETR4,Petrobras atinge R$ 800 bilhões em valor de mercado pela 1ª vez,bo
 M0209,WEGE3,Fábrica de bilionários ganha mais herdeiros: as três famílias controladoras da WEG chegam a 102 acionistas,neutra,WEG|ORG,WEGE3,True
 M0210,SANB11,Santander quer comprar seu papel SANB11 — mas o que o minoritário ganha ao trocar as ações por BDRs?,neutra,Santander|ORG; SANB11|TICKER,SANB11,True
 M0211,PRIO3,"CSN (CSNA3), Energisa (ENGI11), Prio (PRIO3) e GPS (GGPS3): Veja os destaques das empresas",neutra,CSN|ORG; CSNA3|TICKER; Energisa|ORG; ENGI11|TICKER; Prio|ORG; PRIO3|TICKER; GPS|ORG; GGPS3|TICKER,PRIO3,True
-M0213,RDOR3,Rede D’Or ou Bradsaúde? UBS BB revela as ações de saúde que atraem investidores,neutra,Rede D'Or|ORG; Bradsaúde|LOCAL; UBS BB|ORG,RDOR3,True
+M0213,RDOR3,Rede D’Or ou Bradsaúde? UBS BB revela as ações de saúde que atraem investidores,neutra,Rede D'Or|ORG; Bradsaúde|ORG; UBS BB|ORG,RDOR3,True
 M0215,PRIO3,PRIO (PRIO3) registra vitória em blocos Magnetita e Hematita da ANP,boa,PRIO|ORG; PRIO3|TICKER; Magnetita|LOCAL; Hematita|LOCAL; ANP|ORG,PRIO3,True
 M0217,SBSP3,Manutenção da Sabesp pode afetar abastecimento de água,neutra,Sabesp|ORG,SBSP3,True
 M0219,SANB11,"Alta do Santander é puxada pela OPA, mas fundamentos frágeis colocam limite no rali",neutra,Alta do|LOCAL; Santander|ORG,SANB11,True
@@ -126,7 +126,7 @@ M0263,SANB11,"Santander quer comprar sua fatia de SANB11: vale pegar o prêmio d
 M0266,PETR4,"Programa da Petrobras abre 1.120 vagas em cursos gratuitos para a indústria de óleo e gás, com bolsa de até R$ 858",neutra,Petrobras|ORG; R$ 858|VALOR,PETR4,True
 M0268,BBDC4,Bradesco celebra a chegada de Rafael Câmara à Fórmula 1,neutra,Bradesco|ORG; Rafael Câmara|PESSOA,BBDC4,True
 M0269,SUZB3,Suzano (SUZB3) revela 388 mil hectares sensíveis: o que o investidor precisa saber,neutra,Suzano|ORG; SUZB3|TICKER,SUZB3,True
-M0271,EQTL3,Superintendente da Equatorial prestigia 46º Círio em Marabá,neutra,Superintendente da|LOCAL; Equatorial|ORG; Círio|LOCAL; Marabá|LOCAL,EQTL3,True
+M0271,EQTL3,Superintendente da Equatorial prestigia 46º Círio em Marabá,neutra,Equatorial|ORG; Círio|LOCAL; Marabá|LOCAL,EQTL3,True
 M0272,ITUB4,Valor 1000: Itaú Unibanco é a Empresa de Valor 2026,neutra,Itaú Unibanco|ORG; Empresa de Valor|ORG; 2026|PERIODO,ITUB4,True
 M0274,RDOR3,Rede D'Or lidera ranking global de hospitais sustentáveis,neutra,Rede D'Or|ORG,RDOR3,True
 M0275,RADL3,Raia Drogasil (RADL3) aprova pagamento de R$ 202 mi em JCP e dividendos,boa,Raia Drogasil|ORG; RADL3|TICKER; R$ 202 mi|VALOR,RADL3,True
@@ -135,7 +135,7 @@ M0280,ELET3,Eletrobras/Axia Energia: CNE entrega pauta de reivindicações e abr
 M0282,ITUB4,"Itaú (ITUB4) lucra R$ 12,4 bilhões no 2T26, acima das expectativas",boa,"Itaú|ORG; ITUB4|TICKER; R$ 12,4 bilhões|VALOR; 2T26|PERIODO",ITUB4,True
 M0287,RADL3,"Raia Drogasil (RADL3) sobe, mas tendência ainda aponta para queda, diz analista",neutra,Raia Drogasil|ORG; RADL3|TICKER,RADL3,True
 M0291,SANB11,"Santander Brasil despenca 6% após lucro abaixo das expectativas, com alta das provisões de crédito",ruim,Santander Brasil|ORG; 6%|PERCENTUAL,SANB11,True
-M0294,RENT3,"Depois do ‘rali Flavio’, JP Morgan eleva Rumo e corta Localiza; Motiva é ‘top pick’",ruim,JP Morgan|ORG; Rumo|LOCAL; Localiza|ORG; Motiva|LOCAL,RENT3,True
+M0294,RENT3,"Depois do ‘rali Flavio’, JP Morgan eleva Rumo e corta Localiza; Motiva é ‘top pick’",ruim,JP Morgan|ORG; Rumo|LOCAL; Localiza|ORG; Motiva|ORG,RENT3,True
 M0295,BPAC11,"BTG Pactual registra lucro recorde de R$ 4,9 bilhões no 2T26, alta de 22,2%",boa,"BTG Pactual|ORG; R$ 4,9 bilhões|VALOR; 2T26|PERIODO; 22,2%|PERCENTUAL",BPAC11,True
 M0300,WEGE3,WEG aprova pagamento de R$ 450 milhões em juros sobre capital próprio,boa,WEG|ORG; R$ 450 milhões|VALOR,WEGE3,True
 M0304,EMBR3,"Carteira de pedidos da Embraer chega a US$34,5 bilhões no 2T26, marcando 7º recorde consecutivo",boa,"Embraer|ORG; US$34,5 bilhões|VALOR; 2T26|PERIODO",EMBR3,True
@@ -143,7 +143,7 @@ M0306,EQTL3,Equatorial atribui à gestão municipal responsabilidade pela rede d
 M0307,PRIO3,PRIO S.A (PRIO3) Comparação de Concorrentes Divulgados Publicamente,neutra,PRIO|ORG; PRIO3|TICKER,PRIO3,True
 M0308,PETR4,Petrobras atinge recorde de valor de mercado após descoberta no Amapá,boa,Petrobras|ORG; Amapá|LOCAL,PETR4,True
 M0310,BPAC11,"Day trade: Compre BTG Pactual (BPAC11) e venda Auren (AURE3) para ganhar até 1,4% hoje (13), segundo a Ágora",boa,"BTG Pactual|ORG; BPAC11|TICKER; Auren|ORG; AURE3|TICKER; 1,4%|PERCENTUAL; Ágora|ORG",BPAC11,True
-M0312,ITUB4,Itaú Unibanco fecha acordo para comprar 35% da Prisma Capital,boa,Itaú Unibanco|ORG; 35%|PERCENTUAL; Prisma Capital|LOCAL,ITUB4,True
+M0312,ITUB4,Itaú Unibanco fecha acordo para comprar 35% da Prisma Capital,boa,Itaú Unibanco|ORG; 35%|PERCENTUAL; Prisma Capital|ORG,ITUB4,True
 M0314,SBSP3,Acionistas da Sabesp aprovam incorporação de ações da Emae,neutra,Acionistas da|ORG; Sabesp|ORG; Emae|ORG,SBSP3,True
 M0315,ELET3,STF discute homologação de acordo que redefine participação da União na Eletrobras,neutra,STF|ORG; União|ORG; Eletrobras|ORG,ELET3,True
 M0316,RADL3,"RD Saúde (RADL3) registra lucro de R$ 432 milhões no 2T26, alta anual de 7,4%",boa,"RD Saúde|ORG; RADL3|TICKER; R$ 432 milhões|VALOR; 2T26|PERIODO; 7,4%|PERCENTUAL",RADL3,True
@@ -164,7 +164,7 @@ M0370,VALE3,Vale conclui venda do controle de complexo de níquel no Canadá,neu
 M0382,WEGE3,Weg (WEGE3) anuncia dividendos e possível aumento de capital,boa,Weg|ORG; WEGE3|TICKER,WEGE3,True
 M0383,ABEV3,Ambev (ABEV3) sobe contra o Ibovespa; caixa robusto sustenta leitura defensiva,boa,Ambev|ORG; ABEV3|TICKER,ABEV3,True
 M0384,RENT3,"Localiza (RENT3), Hypera (HYPE3) e Track&Field (TFCO4) anunciam proventos",boa,Localiza|ORG; RENT3|TICKER; Hypera|ORG; HYPE3|TICKER; Track&Field|ORG; TFCO4|TICKER,RENT3,True
-M0387,RDOR3,"O efeito colateral do fim da escala 6x1 para Rede D’Or, Hapvida e Fleury",ruim,Rede D'Or|ORG; Hapvida|ORG; Fleury|PESSOA,RDOR3,True
+M0387,RDOR3,"O efeito colateral do fim da escala 6x1 para Rede D’Or, Hapvida e Fleury",ruim,Rede D'Or|ORG; Hapvida|ORG; Fleury|ORG,RDOR3,True
 M0397,VALE3,Vale sanciona Marcelo Gasparino por vazamento de informações confidenciais,neutra,Vale|ORG; Marcelo Gasparino|PESSOA,VALE3,True
 M0400,ITUB4,Eneva (ENEV3) recebe aporte de quase R$ 2 bilhões do Itaú (ITUB4),neutra,Eneva|ORG; ENEV3|TICKER; R$ 2 bilhões|VALOR; Itaú|ORG; ITUB4|TICKER,ITUB4,True
 M0402,RADL3,"RD Saúde (RADL3) pagará R$ 159,8 milhões em JCP aos acionistas; veja quem recebe",boa,"RD Saúde|ORG; RADL3|TICKER; R$ 159,8 milhões|VALOR",RADL3,True
@@ -175,7 +175,7 @@ M0413,ITUB4,"Itaú (ITUB4) pagará R$ 3,99 bilhões em JCP; veja como receber",b
 M0416,RDOR3,"Atlântica, da Bradsaúde (SAUD3), investe milhões em hospital de alta complexidade; entenda acordo com Rede D’Or (RDOR3)",boa,Atlântica|LOCAL; Bradsaúde|ORG; SAUD3|TICKER; Rede D'Or|ORG; RDOR3|TICKER,RDOR3,True
 M0420,SBSP3,"Prefeitura aplica multa de R$ 16,5 milhões à Sabesp",ruim,"Prefeitura|LOCAL; R$ 16,5 milhões|VALOR; Sabesp|ORG",SBSP3,True
 M0421,ABEV3,"Ambev (ABEV3): balanço deve ser positivo no 3T, mas sem bases fáceis de comparação",boa,Ambev|ORG; ABEV3|TICKER; 3T|PERIODO,ABEV3,True
-M0422,VALE3,"Ufes, Vale e Instituto Ambiental Vale realizam oficina de jardim medicinal em homenagem ao Outubro Rosa",neutra,Ufes|LOCAL; Vale|ORG; Instituto Ambiental|ORG; Vale|ORG; Outubro|PERIODO,VALE3,True
+M0422,VALE3,"Ufes, Vale e Instituto Ambiental Vale realizam oficina de jardim medicinal em homenagem ao Outubro Rosa",neutra,Ufes|ORG; Vale|ORG; Instituto Ambiental|ORG; Vale|ORG; Outubro|PERIODO,VALE3,True
 M0438,PETR4,Petrobras rumo ao marco de R$ 1 trilhão em valor de mercado mobiliza projeções e analistas,boa,Petrobras|ORG; R$ 1 trilhão|VALOR,PETR4,True
 M0439,ABEV3,Previsão ABEV3 — Preço Alvo para 2027,neutra,ABEV3|TICKER; Preço Alvo|LOCAL; 2027|PERIODO,ABEV3,True
 M0441,BBDC4,"Quem são as filhas de Amador Aguiar, acionistas do Bradesco, que participarão de aporte bilionário",neutra,Amador Aguiar|PESSOA; Bradesco|ORG,BBDC4,True

@@ -16,7 +16,9 @@ Guia de anotação das entidades: `guia_ner.md`. Base anotada: `data/ner_ouro.cs
 | spaCy `pt_core_news_sm` puro (aula 9) | 0,24 |
 | spaCy `pt_core_news_lg` puro | 0,37 |
 | + `EntityRuler` com a carteira e os tickers + regras para valores, percentuais e períodos | 0,86 |
-| + instituições do mercado e correções pelo contexto ("Nome (TICKER)" é empresa) | **0,95** |
+| + instituições do mercado e correções pelo contexto ("Nome (TICKER)" é empresa, cargos, enumerações) | **0,96** |
+
+*Atualizado em 15/11, depois do comentário do professor:* três regras novas corrigiram erros que chegavam ao radar ("Fleury" e "CEO da Base Exchange" saíam como pessoa), e a análise do notebook passou a comentar o pouco suporte de `PESSOA` (8 entidades) e `LOCAL` (9) e os erros que ainda sobram.
 
 O NER liga cada nome ao ticker da carteira ("Axia Energia", "ex-Eletrobras" e "ELET6" viram ELET3). O código fica em `src/ner.py`, para ser usado pelo chatbot.
 

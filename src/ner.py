@@ -47,6 +47,14 @@ INSTITUICOES = [
 # Siglas do jargão financeiro que o modelo estatístico confunde com organizações ou pessoas
 SIGLAS = {"JCP", "ROE", "ROIC", "ACT", "CEO", "CFO", "OPA", "IPO", "PIB", "BDR", "BDRs", "Ibovespa", "Selic", "IA",
           "CLT", "Ebitda", "EBITDA", "IPCA", "DY"}
+# Cargos: "CEO da Base Exchange" não é pessoa; a organização é o que vem depois do "da"
+CARGOS = {"ceo", "cfo", "presidente", "vice-presidente", "diretor", "diretora", "superintendente", "fundador",
+          "fundadora", "sócio", "sócia", "conselheiro", "conselheira", "executivo", "executiva", "gerente", "chefe"}
+# Últimas palavras que só aparecem em nome de empresa ("Prisma Capital", "Zé Delivery")
+SUFIXOS_ORG = {"Capital", "Asset", "Investimentos", "Bank", "Energia", "Saúde", "Seguros", "Group", "Holding",
+               "Exchange", "Delivery", "S.A.", "SA"}
+# O que pode separar itens de uma enumeração: "Rede D'Or, Hapvida e Fleury"
+SEPARADORES = {",", ";", "e", "ou"}
 
 
 def normaliza(texto):
@@ -94,7 +102,10 @@ def regras_mercado(doc):
 
     - nome próprio logo antes de "(TICKER)" é empresa: "Cemig (CMIG4)" e "Casas Bahia (BHIA3)" viram ORG,
       mesmo que o modelo tenha dito LOCAL ou não tenha visto nada;
-    - siglas do jargão (JCP, ROE, CEO...) deixam de ser entidade.
+    - siglas do jargão (JCP, ROE, CEO...) deixam de ser entidade;
+    - cargo + "da/do/de" + nome ("CEO da Base Exchange") vira só a organização;
+    - pessoa ou local terminado em palavra típica de empresa ("Prisma Capital") vira ORG;
+    - numa enumeração com empresas ("Rede D'Or, Hapvida e Fleury"), pessoa ou local vira ORG.
     """
     ents = [e for e in doc.ents if e.text not in SIGLAS]
     for i, tok in enumerate(doc[:-1]):
@@ -108,8 +119,43 @@ def regras_mercado(doc):
         if inicio == i or any(e.ent_id_ and e.start < i and inicio < e.end for e in ents):
             continue  # nada antes, ou já é uma empresa da carteira
         ents = [e for e in ents if not (e.start < i and inicio < e.end)] + [Span(doc, inicio, i, label="ORG")]
-    doc.ents = sorted(ents, key=lambda s: s.start)
+    ents = sorted(_tira_cargos(doc, ents), key=lambda s: s.start)
+    ents = [Span(doc, e.start, e.end, label="ORG") if e.label_ in {"PER", "LOC"} and doc[e.end - 1].text in SUFIXOS_ORG
+            else e for e in ents]
+    doc.ents = _enumeracoes(doc, ents)
     return doc
+
+
+def _tira_cargos(doc, ents):
+    saida = []
+    for e in ents:
+        if e.ent_id_ or doc[e.start].lower_ not in CARGOS:
+            saida.append(e)
+            continue
+        resto = e.start + 1
+        if resto < e.end and doc[resto].lower_ in {"da", "do", "de"}:
+            resto += 1
+        if resto < e.end:  # "CEO da Base Exchange" -> "Base Exchange"; "Superintendente da" some
+            saida.append(Span(doc, resto, e.end, label="ORG"))
+    return saida
+
+
+def _enumeracoes(doc, ents):
+    """Itens de uma mesma enumeração têm o mesmo tipo: se um vizinho é ORG, pessoa ou local também vira ORG."""
+    ents = list(ents)
+    mudou = True
+    while mudou:
+        mudou = False
+        for k in range(len(ents) - 1):
+            a, b = ents[k], ents[k + 1]
+            entre = doc[a.end:b.start]
+            if len(entre) == 0 or any(t.lower_ not in SEPARADORES for t in entre):
+                continue
+            for j, (x, y) in ((k, (a, b)), (k + 1, (b, a))):
+                if x.label_ in {"PER", "LOC"} and y.label_ == "ORG":
+                    ents[j] = Span(doc, x.start, x.end, label="ORG")
+                    mudou = True
+    return ents
 
 
 def _parte_de_nome(doc, j):

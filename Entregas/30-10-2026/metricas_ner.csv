@@ -23,11 +23,11 @@ C · B + carteira + regras,VALOR,17,0,1,1.0,0.94,0.97
 C · B + carteira + regras,PERCENTUAL,16,0,0,1.0,1.0,1.0
 C · B + carteira + regras,PERIODO,18,0,0,1.0,1.0,1.0
 C · B + carteira + regras,TOTAL (micro),176,29,29,0.86,0.86,0.86
-D · C + mercado,ORG,91,2,8,0.98,0.92,0.95
+D · C + mercado,ORG,94,2,5,0.98,0.95,0.96
 D · C + mercado,TICKER,37,0,0,1.0,1.0,1.0
-D · C + mercado,PESSOA,7,1,1,0.88,0.88,0.88
-D · C + mercado,LOCAL,8,7,1,0.53,0.89,0.67
+D · C + mercado,PESSOA,7,0,1,1.0,0.88,0.93
+D · C + mercado,LOCAL,8,5,1,0.62,0.89,0.73
 D · C + mercado,VALOR,17,0,1,1.0,0.94,0.97
 D · C + mercado,PERCENTUAL,16,0,0,1.0,1.0,1.0
 D · C + mercado,PERIODO,18,0,0,1.0,1.0,1.0
-D · C + mercado,TOTAL (micro),194,10,11,0.95,0.95,0.95
+D · C + mercado,TOTAL (micro),197,7,8,0.97,0.96,0.96
