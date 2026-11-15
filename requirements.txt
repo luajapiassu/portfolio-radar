@@ -13,3 +13,5 @@ transformers>=4.38
 sentence-transformers>=2.6
 pyarrow>=14
 ipykernel>=6.0
+streamlit>=1.30
+requests>=2.31

@@ -4,7 +4,7 @@ Radar de notícias financeiras para uma carteira de ações, com Processamento d
 
 ## Problema
 
-Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, as notícias sobre as empresas em que investe, espalhadas por vários sites de jornais. Ler tudo manualmente é lento. O Portfolio Radar coleta manchetes desses sites (via RSS e busca do Google News), classifica cada uma como **boa, ruim ou neutra para o investidor da empresa citada**, extrai as entidades mencionadas e permite consultar os resultados por um chatbot.
+Um analista de uma gestora de investimentos precisa acompanhar, todos os dias, as notícias sobre as empresas em que investe, espalhadas por vários sites de jornais. Ler tudo manualmente é lento. O Portfolio Radar coleta manchetes desses sites (via RSS e busca do Google News), classifica cada uma como **boa, ruim ou neutra para o investidor da empresa citada**, extrai as entidades mencionadas e mostra o resultado numa aplicação web: o analista cola o link (ou a manchete) de uma notícia e vê o sentimento e as entidades.
 
 Extensão opcional: incluir os fatos relevantes publicados na CVM.
 
@@ -17,7 +17,7 @@ Extensão opcional: incluir os fatos relevantes publicados na CVM.
 | NER | Empresas, tickers, pessoas, locais, valores, percentuais e períodos (spaCy + `EntityRuler` + regras) | Semana 9 |
 | Rede neural | Classificadores BiLSTM e GRU (Keras), comparados a TF-IDF + Regressão Logística | Semanas 4, 6 e 10 |
 | Transformer | BERT em português pré-treinado, comparado ao LSTM | Semana 11 |
-| Chatbot | Perguntas em linguagem natural respondidas só com os dados processados | Semana 13 |
+| Aplicação web | Interface em Streamlit: recebe o link ou a manchete, mostra o sentimento e as entidades, e marca as entidades não verificadas | Semana 13 |
 
 ## Estrutura
 
@@ -25,7 +25,7 @@ Extensão opcional: incluir os fatos relevantes publicados na CVM.
 portfolio-radar/
 ├── data/            # Dados de exemplo e instruções para obtê-los
 ├── notebooks/       # Experimentos: sentimentos, NER, rede neural, Transformer
-├── src/             # Código reaproveitado pelos notebooks e pela aplicação (NER, pré-processamento)
+├── src/             # Aplicação web (app.py) e código reaproveitado pelos notebooks (NER, sentimento, pré-processamento)
 ├── Entregas/        # Uma subpasta por data de entrega (DD-MM-AAAA): proposta, relatório, resultados
 └── requirements.txt
 ```
@@ -51,6 +51,22 @@ Os notebooks rodam localmente (VS Code ou Jupyter), a partir da pasta `notebooks
 | `05_rede_neural.ipynb` | **Entrega de 29/10.** Treina TF-IDF + Regressão Logística, BiLSTM e GRU em bases públicas rotuladas e compara com o FinBERT nas 200 manchetes revisadas | `Entregas/30-10-2026/resultado_rede_neural.csv`, `metricas_sentimento.csv` |
 | `06_treino_estendido.ipynb` | **Entrega de 09/11.** Treina 8 modelos com 5 sementes (TF-IDF, BiLSTM, GRU, embeddings multilíngues, fine-tuning de BERTimbau, FinBERT-PT-BR e XLM-R) em bases em português e inglês e compara com o FinBERT com *bootstrap*. Cria o ambiente na primeira célula; precisa de GPU (~3h30 numa RTX 3060) | `Entregas/09-11-2026/treino_estendido/completo/` |
 
+### Aplicação web
+
+Na raiz do repositório, com o ambiente ativado:
+
+```bash
+streamlit run src/app.py
+```
+
+O navegador abre em http://localhost:8501. Cole o link de uma notícia (InfoMoney, Money Times, Exame…) ou a própria manchete e clique em **Analisar**. A aplicação:
+
+- lê **só o título** da página, nunca o texto da matéria (links do Google News não funcionam, porque abrem a notícia por JavaScript: cole a manchete);
+- classifica a manchete como boa, neutra ou ruim para o acionista, com a confiança (FinBERT-PT-BR, `src/sentimento.py`);
+- destaca as entidades (`src/ner.py`), liga as empresas da carteira ao ticker e marca como **não verificadas** as entidades que só o modelo estatístico encontrou.
+
+A primeira análise demora alguns segundos, enquanto os modelos carregam. Roda em CPU (testado num MacBook M1 com 8 GB). Para usar outro modelo de sentimento, como um BERTimbau ajustado salvo com `save_pretrained`, defina a variável `RADAR_MODELO` com o nome no Hugging Face ou a pasta do modelo antes de abrir o app.
+
 Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `data/teste_revisao.csv`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. O notebook 03 só depende dessa planilha, então roda direto a partir do repositório. O 04 também roda direto. O 05 baixa as bases públicas de treino do Hugging Face na primeira execução (~30 MB).
 
 ## Cronograma
@@ -59,7 +75,7 @@ Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo suger
 |---|---|---|
 | 22/10/2026 | Proposta + experimento de sentimentos | `Entregas/27-10-2026/`, notebook 03 |
 | 29/10/2026 | Experimentos de NER e rede neural | `Entregas/30-10-2026/`, notebooks 04 e 05 |
-| 09/11/2026 | Experimento com Transformer + protótipo, relatório e código | `Entregas/09-11-2026/`, notebook 06 (protótipo e relatório a fazer) |
+| 09/11/2026 | Experimento com Transformer + protótipo, relatório e código | `Entregas/09-11-2026/`, notebook 06, aplicação em `src/app.py` |
 | 16/11/2026 | Apresentação | |
 
 ## Integrantes

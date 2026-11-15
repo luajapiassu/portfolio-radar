@@ -1,0 +1,6 @@
+[server]
+# Só neste computador: o app não fica acessível pela rede
+address = "localhost"
+
+[browser]
+gatherUsageStats = false
