@@ -17,7 +17,7 @@ Extensão opcional: incluir os fatos relevantes publicados na CVM.
 | NER | Empresas, tickers, pessoas, locais, valores, percentuais e períodos (spaCy + `EntityRuler` + regras) | Semana 9 |
 | Rede neural | Classificadores BiLSTM e GRU (Keras), comparados a TF-IDF + Regressão Logística | Semanas 4, 6 e 10 |
 | Transformer | BERT em português pré-treinado, comparado ao LSTM | Semana 11 |
-| Aplicação web | Interface em Streamlit: recebe o link ou a manchete, mostra o sentimento e as entidades, e marca as entidades não verificadas | Semana 13 |
+| Aplicação web | Interface em Streamlit: analisa o link ou a manchete (sentimento e entidades), compara com a linha de base, mostra os resultados que justificam os modelos e o radar das manchetes por empresa | Semana 13 |
 
 ## Estrutura
 
@@ -25,7 +25,8 @@ Extensão opcional: incluir os fatos relevantes publicados na CVM.
 portfolio-radar/
 ├── data/            # Dados de exemplo e instruções para obtê-los
 ├── notebooks/       # Experimentos: sentimentos, NER, rede neural, Transformer
-├── src/             # Aplicação web (app.py) e código reaproveitado pelos notebooks (NER, sentimento, pré-processamento)
+├── src/             # Aplicação web (app.py), treino do modelo do app e código reaproveitado pelos notebooks
+├── modelos/         # Classificador do app (gerado por src/treina_modelo_app.py) e suas previsões no teste
 ├── Entregas/        # Uma subpasta por data de entrega (DD-MM-AAAA): proposta, relatório, resultados
 └── requirements.txt
 ```
@@ -53,19 +54,25 @@ Os notebooks rodam localmente (VS Code ou Jupyter), a partir da pasta `notebooks
 
 ### Aplicação web
 
-Na raiz do repositório, com o ambiente ativado:
+Na raiz do repositório, com o ambiente ativado, treine uma vez o classificador do app (cerca de 15 minutos em CPU; baixa as bases públicas, ~40 MB, e o codificador de frases, ~1 GB):
+
+```bash
+python src/treina_modelo_app.py
+```
+
+O script refaz o modelo "Embeddings multilíngues + Regressão Logística" do notebook 06, o de maior F1 macro médio no teste (0,657), confere o F1 nas 200 manchetes e salva `modelos/embeddings_lr.joblib` e `modelos/previsoes_teste.csv`. Depois:
 
 ```bash
 streamlit run src/app.py
 ```
 
-O navegador abre em http://localhost:8501. Cole o link de uma notícia (InfoMoney, Money Times, Exame…) ou a própria manchete e clique em **Analisar**. A aplicação:
+O navegador abre em http://localhost:8501. A aplicação tem três abas:
 
-- lê **só o título** da página, nunca o texto da matéria (links do Google News não funcionam, porque abrem a notícia por JavaScript: cole a manchete);
-- classifica a manchete como boa, neutra ou ruim para o acionista, com a confiança (FinBERT-PT-BR, `src/sentimento.py`);
-- destaca as entidades (`src/ner.py`), liga as empresas da carteira ao ticker e marca como **não verificadas** as entidades que só o modelo estatístico encontrou.
+- **Analisar manchete:** cole o link de uma notícia (InfoMoney, Money Times, Exame…) ou a própria manchete. O app lê **só o título** da página, nunca o texto da matéria (links do Google News não funcionam, porque abrem a notícia por JavaScript: cole a manchete); classifica a manchete como boa, neutra ou ruim para o acionista com o modelo escolhido e, lado a lado, com a linha de base (FinBERT-PT-BR sem ajuste); e destaca as entidades (`src/ner.py`), liga as empresas da carteira ao ticker e marca como **não verificadas** as entidades que só o modelo estatístico encontrou.
+- **Por que estes modelos:** os resultados dos notebooks 03 a 06 que justificam as escolhas (F1 macro dos nove classificadores, intervalos de confiança, F1 por classe e o NER por camada, com o suporte de cada tipo de entidade).
+- **Radar da carteira:** as 200 manchetes de teste passadas pelo pipeline inteiro, filtráveis por empresa e por sentimento, com o rótulo revisado ao lado para mostrar onde o modelo erra.
 
-A primeira análise demora alguns segundos, enquanto os modelos carregam. Roda em CPU (testado num MacBook M1 com 8 GB). Para usar outro modelo de sentimento, como um BERTimbau ajustado salvo com `save_pretrained`, defina a variável `RADAR_MODELO` com o nome no Hugging Face ou a pasta do modelo antes de abrir o app.
+A primeira análise demora alguns segundos, enquanto os modelos carregam. Roda em CPU (testado num MacBook M1 com 8 GB). Sem `modelos/embeddings_lr.joblib`, o app usa o FinBERT-PT-BR. Para usar outro modelo, como um BERTimbau ajustado salvo com `save_pretrained`, defina a variável `RADAR_MODELO` com o nome no Hugging Face ou a pasta do modelo antes de abrir o app.
 
 Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo sugerido por IA generativa (Claude), e 200 delas (cerca de 10 por empresa) formam a `data/teste_revisao.csv`, que revisamos seguindo o guia em `Entregas/27-10-2026/guia_rotulagem.md`. O notebook 03 só depende dessa planilha, então roda direto a partir do repositório. O 04 também roda direto. O 05 baixa as bases públicas de treino do Hugging Face na primeira execução (~30 MB).
 

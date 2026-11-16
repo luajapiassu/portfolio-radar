@@ -1,16 +1,16 @@
-# Entrega de 09/11 — Experimento com Transformer (em andamento)
+# Entrega de 09/11: experimento com Transformer
 
 | Etapa | Situação | Onde está |
 |---|---|---|
 | 5 · Transformers e modelos pré-treinados | **Feito** | `notebooks/06_treino_estendido.ipynb`, resultados em `treino_estendido/completo/` |
-| 6 · Protótipo (chatbot) | A fazer | — |
-| Relatório técnico | A fazer | — |
+| 6 · Aplicação web (substitui o chatbot) | **Feito** | `src/app.py` |
+| Relatório técnico | **Feito** | `Entregas/16-11-2026/` |
 
 ## Experimento com Transformers (notebook 06)
 
 Treinamos 8 modelos, cada um com 5 sementes quando o resultado depende da semente, e comparamos com o FinBERT-PT-BR sem treino nas mesmas 200 manchetes revisadas do notebook 03. Usamos as bases em português do notebook 05 e mais três bases em inglês rotuladas por humanos: SEntFiN, Twitter Financial News e Financial PhraseBank.
 
-| modelo | F1 macro (média de 5 sementes) | P(melhor que FinBERT) |
+| modelo | F1 macro (média de 5 sementes; TF-IDF e embeddings: 1 rodada, determinísticos) | P(melhor que FinBERT) |
 |---|---|---|
 | Embeddings multilíngues + Regressão Logística | 0,657 | 99,4% |
 | XLM-R treinado só em inglês | 0,648 | 99,8% |
