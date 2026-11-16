@@ -76,7 +76,7 @@ Entre o 02 e o 03 há uma etapa manual: as 500 manchetes receberam rótulo suger
 | 22/10/2026 | Proposta + experimento de sentimentos | `Entregas/27-10-2026/`, notebook 03 |
 | 29/10/2026 | Experimentos de NER e rede neural | `Entregas/30-10-2026/`, notebooks 04 e 05 |
 | 09/11/2026 | Experimento com Transformer + protótipo, relatório e código | `Entregas/09-11-2026/`, notebook 06, aplicação em `src/app.py` |
-| 16/11/2026 | Apresentação | |
+| 16/11/2026 | Relatório técnico e apresentação | `Entregas/16-11-2026/` (`relatorio_tecnico.pdf` e `.docx`) |
 
 ## Integrantes
 
