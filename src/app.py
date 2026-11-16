@@ -80,12 +80,13 @@ ents = entidades(nlp(), texto)
 nomes = nomes_carteira()
 empresas = sorted({e["ticker"] for e in ents if e["ticker"]})
 
-st.subheader(texto)
+st.subheader(texto.replace("$", "\\$"))  # sem isso, "R$ ... R$" vira fórmula matemática
 
 col1, col2 = st.columns(2)
-col1.metric("Para o acionista", f"{ICONE[rotulo]} {rotulo}", f"confiança de {confianca:.0%}", delta_color="off")
-col2.metric("Empresas da carteira", len(empresas), ", ".join(f"{nomes.get(t, t)} ({t})" for t in empresas) or "nenhuma",
-            delta_color="off")
+col1.metric("Para o acionista", f"{ICONE[rotulo]} {rotulo}")
+col1.caption(f"confiança de {confianca:.0%}")
+col2.metric("Empresas da carteira", len(empresas))
+col2.caption(", ".join(f"{nomes.get(t, t)} ({t})" for t in empresas) or "nenhuma")
 for r in ["boa", "neutra", "ruim"]:
     st.progress(probs[r], text=f"{r}: {probs[r]:.0%}")
 
